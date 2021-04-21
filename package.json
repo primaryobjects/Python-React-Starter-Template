@@ -3,26 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
-    "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "concurrently": "*"
   },
   "scripts": {
-    "start": "react-scripts start",
     "dev": "concurrently --kill-others \"cd api && flask run --no-debugger\" \"react-scripts start\"",
+    "start": "cd api && flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install --only=dev && npm install && npm run dev"
+    "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
   },
   "eslintConfig": {
     "extends": [

@@ -9,7 +9,7 @@ class Home extends Component {
       time: null
     };
 
-    fetch('/time')
+    fetch('/api/time')
       .then(res => res.json())
       .then(data => {
         const time = data.time;
