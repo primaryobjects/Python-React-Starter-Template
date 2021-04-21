@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+Python Bootstrap Flask React Starter Template
+===
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A quick and easy Python + Flask + [React](https://reactjs.org) template project, using Twitter [Bootstrap](https://getbootstrap.com) 5.0 and React Router for creating a simple single page application.
 
-## Available Scripts
+![Python Flask, React Router, Twitter Bootstrap template screenshot.](screenshot.gif)
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+- Clone repository.
+- Open a command prompt, navigate to the folder, and enter: `npm install`
+- Next, run a build of the React client by entering: `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Development Usage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You can make changes to the pages in `/src/components` and see them update live.
 
-### `npm test`
+## Demo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+http://pythonbootstrapper.herokuapp.com
 
-### `npm run build`
+## Contents:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- /src/index.js
+- /src/App.js
+- /src/components/Header/index.js
+- /src/components/Footer/index.js
+- /src/components/Home/index.js
+- /src/components/About/index.js
+- /src/components/Contact/index.js
+- /src/components/NotFound/index.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Editing Pages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Edit `/src/components/Home/index.js` to add your content to the Home page. The default contents include:
 
-### `npm run eject`
+```js
+class Home extends Component {
+  render() {
+    return (
+      <h1>Home</h1>
+      <div>{this.state.time}</div>
+    )
+  }
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Kory Becker http://www.primaryobjects.com/kory-becker
