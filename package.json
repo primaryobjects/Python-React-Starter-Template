@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "concurrently --kill-others \"cd api && flask run --no-debugger\" \"react-scripts start\"",
-    "start": "cd api && flask run --no-debugger",
+    "start": "npm run heroku-postbuild && cd api && flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
