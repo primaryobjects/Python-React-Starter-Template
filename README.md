@@ -45,5 +45,11 @@ class Home extends Component {
 }
 ```
 
+## Deploying on Heroku
+
+After creating the application on Heroku, click **Settings**, under **Buildpacks**, add **heroku/nodejs** and **heroku/python**.
+
+This will allow Heroku to build the react static files and serve the Python Flask app.
+
 ## Author
 Kory Becker http://www.primaryobjects.com/kory-becker
